@@ -16,10 +16,11 @@ export const FooterBase = styled.footer`
   text-align: center;
 
   @media (max-width: 1000px) {
-    margin-bottom: 50px;
+    padding-left: 0%;
+     padding-right: 0%;
     max-height: 350px;
-    display: block;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
