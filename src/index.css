@@ -1,19 +1,35 @@
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+
+
 }
 
+/* Preto = #0D0D0D
+Branco = #F2F2F2
+Amarelo "escuro" = #F2CB05
+Amarelo neon = #F2E205
+Vermelho = #D91E2E */
+
+/* Preto = #0D0D0D
+Branco = #4f5c7c
+Amarelo "escuro" = #988829
+Amarelo neon = #fdfe00
+Vermelho = #282e3c */
+
 :root {
-  --primary: #213657;
+  --primary:  #0D0D0D;
   --black: #000000;
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5;
-  --white: #FFFFFF;
+  --white: #F2F2F2;
+  --yellow:#fdfe00;
+  --darkyellow:#988829;
   --frontEnd: #6BD1FF;
   --backEnd: #00C86F;
-  --background: #7b8eac;
-  --hover-color: #7b8eac;
+  --background:  #0D0D0D;
+  --hover-color: #988829;
 
 }
 
@@ -21,7 +37,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #7b8eac;
+  background-color:  #0D0D0D;
 }
 
 a {

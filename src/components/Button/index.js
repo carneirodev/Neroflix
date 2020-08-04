@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 const Button = styled.button`
 
-    color: var(--white);
-    border: 1px solid var(--white);
+    color: var(--primary);
+    background-color:var(--yellow);
+    border: 1px solid var(--darkyellow);
     box-sizing: border-box;
     cursor: pointer;
     padding: 16px 24px;
@@ -14,11 +15,12 @@ const Button = styled.button`
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
-    transition: opacity .3s;
+    transition: opacity .9s, font-size .5s;
 
   &:hover,
   &:focus {
     opacity: .5;
+    font-size:18px;
   }
 `;
 

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <FooterBase>
       <a href="http://www.carneirodev.com/">
-        <img width="100" height="50" src="http://carneirodev.com/CarneiroBrancoFundo.png" alt="Logo Alura" />
+        <img width="100" height="50" src="http://carneirodev.com/CarneiroBranco.png" alt="Logo Alura" />
       </a>
       <p>
         Criado durante a

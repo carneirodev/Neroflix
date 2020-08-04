@@ -7,7 +7,7 @@
 
       "videos": [
         {
-          "titulo": "O video que me inspira e me lembra que sou capaz de tudo!",
+          "titulo": "Seja bem vindo ao NEROFLIX!",
           "url": "https://www.youtube.com/watch?v=zpjOjCVb6Es"
         },
         {
@@ -46,10 +46,6 @@
 
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=aR-KAldshAE"
-        },
-        {
           "titulo": "League Legends",
           "url": "https://www.youtube.com/watch?v=aR-KAldshAE"
         },
@@ -72,28 +68,48 @@
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Músicas",
       "cor": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
-      },
+
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Hardwell & KSHMR - Power",
+          "url": "https://www.youtube.com/watch?v=J701ucIsrrk"
+        },
+
+        {
+          "titulo": "Dimitri Vegas & Like Mike ft Wolfpack & Katy B - Find Tomorrow ",
+          "url": "https://www.youtube.com/watch?v=MWshlyFLPCA"
+        },
+
+        {
+            "titulo": "Legends Never Die (ft. Against The Current)",
+            "url": "https://www.youtube.com/watch?v=r6zIGXun57U"
+          },
+
+        {
+            "titulo": "Thomas Gold - Sing2Me",
+            "url": "https://www.youtube.com/watch?v=4HyXluv9Qeg"
+          },
+        {
+          "titulo": "Jasper Forks - Another Sleepless Night",
+          "url": "https://www.youtube.com/watch?v=hB6qnMNTRqw"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "All These Roads (feat. Zella Day and Sam Martin)",
+          "url": "https://www.youtube.com/watch?v=gg192Qe0_b8"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "Cartoon - On & On (feat. Daniel Levi)",
+          "url": "https://www.youtube.com/watch?v=K4DyBUG242c"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "Hardwell ft. Mitch Crown - Call Me A Spaceman ",
+          "url": "https://www.youtube.com/watch?v=ppy-fgbPn2s"
+        },
+        {
+          "titulo": "Hardwell Ft. Chris Jones - Young Again",
+          "url": "https://www.youtube.com/watch?v=W8XA5EBVdd0"
         }
       ]
     },
@@ -103,49 +119,41 @@
       "videos": [
         {
           "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+          "url": "https://www.youtube.com/watch?v=mbbPSq63yuM"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "Transformers",
+          "url": "https://www.youtube.com/watch?v=bzKbEBPsmo0"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+          "titulo": "Velozes & Furiosos 9",
+          "url": "https://www.youtube.com/watch?v=hujU0dw6Erk"
         },
         {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "Harry Potter",
+          "url": "https://www.youtube.com/watch?v=VyHV0BRtdxo"
+        },
+        {
+          "titulo": "Amélie (2001)",
+          "url": "https://www.youtube.com/watch?v=lrlQR_KH_nw"
         }
       ]
     },
     {
-      "titulo": "Games",
+      "titulo": "Livros",
       "cor": "red",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
-      },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "O PODER DO HÁBITO - Charles Duhigg",
+          "url": "https://www.youtube.com/watch?v=gueCuAfrskc"
         },
         {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+          "titulo": "COMECE PELO PORQUÊ - Simon Sinek",
+          "url": "https://www.youtube.com/watch?v=1MwpT-pFChY"
         },
         {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
-        },
-        {
-          "titulo": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
-        },
-        {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+          "titulo": "MINDSET - Carol Dweck",
+          "url": "https://www.youtube.com/watch?v=_5XIH_aldDA"
         }
       ]
     },
