@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 export const ContentAreaContainer = styled.section`
-  margin-left: 5%;
-  margin-right: 5%;
-  width:100%;
   @media (max-width: 800px) {
     flex-direction: column;
     padding: 3%;
@@ -19,6 +16,8 @@ display: inline-block;
 padding: 25px;
 line-height: 1;
 border-radius: 4px;
+color: #fff;
+font-size: 20px;
 
 @media (max-width: 800px) {
   font-size: 18px;

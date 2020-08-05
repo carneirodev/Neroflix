@@ -1,9 +1,12 @@
+/* eslint-disable react/default-props-match-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
 const FormFieldWrapper = styled.div`
   position: relative;
+  margin-left:5%;
+  margin-right: 5%;
   textarea {
     min-height: 150px;
   }
@@ -52,8 +55,8 @@ const Input = styled.input`
   border-radius: 4px;
   transition: border-color .3s;
 
-  &:focus {
-    border-bottom-color: var(--primary);
+  &:focus{
+    border-bottom-color: var(--yellow);
   }
   &:focus:not([type='color']) + ${Label.Text} {
     transform: scale(.6) translateY(-10px);
@@ -74,7 +77,7 @@ function FormField({
 }) {
   const isTypeTextArea = type === 'textarea';
   const tag = isTypeTextArea ? 'textarea' : 'input';
-
+  const hasValue = value.length;
   return (
     <FormFieldWrapper>
       <Label>
@@ -83,6 +86,7 @@ function FormField({
           type={type}
           value={value}
           name={name}
+          hasValue={hasValue}
           onChange={onChange}
         />
         <Label.Text>
@@ -95,8 +99,9 @@ function FormField({
 }
 
 FormField.defaultProps = {
-  type: 'text',
-  value: '',
+  type: 'text',
+  value: '',
+  onChange: () => {},
 };
 
 FormField.propTypes = {
@@ -104,7 +109,7 @@ FormField.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string,
   value: PropTypes.string,
-  onChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
 };
 
 export default FormField;

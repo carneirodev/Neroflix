@@ -1,8 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/no-unresolved */
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
+import Button from '../../../components/Button';
 import FormField from '../../../components/FormField';
-import './Categoria.css';
+import { Div, Category, ContentAreaContainer } from './style.js';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -14,10 +18,9 @@ function CadastroCategoria() {
   const [values, setValues] = useState(valoresIniciais);
 
   function setValue(chave, valor) {
-    // chave: nome, descricao, bla, bli
     setValues({
       ...values,
-      [chave]: valor, // nome: 'valor'
+      [chave]: valor,
     });
   }
 
@@ -30,103 +33,54 @@ function CadastroCategoria() {
 
   // ============
 
-  useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categorias';
-      fetch(URL)
-        .then(async (respostaDoServer) => {
-          if (respostaDoServer.ok) {
-            const resposta = await respostaDoServer.json();
-            setCategorias(resposta);
-            return;
-          }
-          throw new Error('Não foi possível pegar os dados');
-        });
-    }
-  }, []);
-
   return (
     <PageDefault>
-      <h1>
-        Cadastro de Categoria:
-        {' '}
-        {values.nome}
-      </h1>
+      <ContentAreaContainer>
 
-      <form onSubmit={function handleSubmit(infosDoEvento) {
-        infosDoEvento.preventDefault();
+        <Category>
 
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
+          Cadastro de Categoria:
+          {' '}
+          {values.nome}
 
-        setValues(valoresIniciais);
-      }}
-      >
+        </Category>
 
-        <FormField
-          label="Nome da Categoria"
-          type="text"
-          name="nome"
-          value={values.nome}
-          onChange={handleChange}
-        />
+        <form>
 
-        <FormField
-          label="Descrição:"
-          type="????"
-          name="descricao"
-          value={values.descricao}
-          onChange={handleChange}
-        />
-        {/* <div>
-          <label>
-            Descrição:
-            <textarea
-              type="text"
-              value={values.descricao}
-              name="descricao"
-              onChange={handleChange}
-            />
-          </label>
-        </div> */}
+          <FormField
+            label="Nome da Categoria"
+            type="text"
+            name="nome"
+            value={values.nome}
+            onChange={handleChange}
+          />
 
-        <FormField
-          label="Cor"
-          type="color"
-          name="cor"
-          value={values.cor}
-          onChange={handleChange}
-        />
-        {/* <div>
-          <label>
-            Cor:
-            <input
-              type="color"
-              value={values.cor}
-              name="cor"
-              onChange={handleChange}
-            />
-          </label>
-        </div> */}
+          <FormField
+            label="Descrição"
+            type="textarea"
+            name="descricao"
+            value={values.descricao}
+            onChange={handleChange}
+          />
 
-        <button>
-          Cadastrar
-        </button>
-      </form>
+          <FormField
+            label="Cor"
+            type="color"
+            name="cor"
+            value={values.cor}
+            onChange={handleChange}
+          />
+          <Div>
+            <Button>
+              Cadastrar
+            </Button>
+          </Div>
+        </form>
 
-      <ul>
-        {categorias.map((categoria, indice) => (
-          <li key={`${categoria}${indice}`}>
-            {categoria.titulo}
-          </li>
-        ))}
-      </ul>
-
-      <Link to="/">
-        Ir para home
-      </Link>
+        <Link to="/">
+          Ir para home
+        </Link>
+      </ContentAreaContainer>
     </PageDefault>
   );
 }

@@ -1,9 +1,10 @@
+/* eslint-disable import/no-unresolved */
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
-import { Div, Category, ContentAreaContainer } from './Video.js';
+import { Div, Category, ContentAreaContainer } from './Style';
 
 function CadastroVideo() {
   const valoresIniciais = {
@@ -15,10 +16,9 @@ function CadastroVideo() {
   const [values, setValues] = useState(valoresIniciais);
 
   function setValue(chave, valor) {
-    // chave: nome, descricao, bla, bli
     setValues({
       ...values,
-      [chave]: valor, // nome: 'valor'
+      [chave]: valor,
     });
   }
 
@@ -31,21 +31,6 @@ function CadastroVideo() {
 
   // ============
 
-  useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categorias';
-      fetch(URL)
-        .then(async (respostaDoServer) => {
-          if (respostaDoServer.ok) {
-            const resposta = await respostaDoServer.json();
-            setCategorias(resposta);
-            return;
-          }
-          throw new Error('Não foi possível pegar os dados');
-        });
-    }
-  }, []);
-
   return (
     <PageDefault>
       <ContentAreaContainer>
@@ -56,17 +41,7 @@ function CadastroVideo() {
           {values.nome}
         </Category>
 
-        <form onSubmit={function handleSubmit(infosDoEvento) {
-          infosDoEvento.preventDefault();
-
-          setCategorias([
-            ...categorias,
-            values,
-          ]);
-
-          setValues(valoresIniciais);
-        }}
-        >
+        <form>
 
           <FormField
             label="Nome da Categoria"
@@ -83,17 +58,6 @@ function CadastroVideo() {
             value={values.descricao}
             onChange={handleChange}
           />
-          {/* <div>
-          <label>
-            Descrição:
-            <textarea
-              type="text"
-              value={values.descricao}
-              name="descricao"
-              onChange={handleChange}
-            />
-          </label>
-        </div> */}
 
           <FormField
             label="Cor"
@@ -102,17 +66,6 @@ function CadastroVideo() {
             value={values.cor}
             onChange={handleChange}
           />
-          {/* <div>
-          <label>
-            Cor:
-            <input
-              type="color"
-              value={values.cor}
-              name="cor"
-              onChange={handleChange}
-            />
-          </label>
-        </div> */}
           <Div>
             <Button>
               Enviar Forms
@@ -120,13 +73,6 @@ function CadastroVideo() {
           </Div>
         </form>
 
-        <ul>
-          {categorias.map((categoria, indice) => (
-            <li key={`${categoria}${indice}`}>
-              {categoria.titulo}
-            </li>
-          ))}
-        </ul>
         <Div>
           <Button>
             <Link to="/">

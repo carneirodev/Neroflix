@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/jsx-props-no-spreading */
@@ -8,6 +9,8 @@ import styled from 'styled-components';
 const Container = styled.ul`
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items:center;
   .slick-prev:before,
   .slick-next:before {visibility:hidden}
   &:hover,
@@ -21,7 +24,7 @@ const Container = styled.ul`
     bottom: 0;
     margin: 0;
     width: 50px;
-    height: 197px;
+    height: 180px;
     transform: initial;
 
     background-color:#000;
@@ -54,7 +57,7 @@ const Container = styled.ul`
     bottom: 0;
     margin: 0;
     width: 35px;
-    height: 197px;
+    height: 160px;
     transform: initial;
     background-color:#000;
 
@@ -68,7 +71,6 @@ const Container = styled.ul`
     }
   }
   .slick-prev {
-
     left: 0;
   }
   .slick-next {
@@ -83,7 +85,7 @@ export const SliderItem = styled.li`
   img {
     margin: 16px;
     width: 298px;
-    height: 197px;
+    height: 230px;
     object-fit: cover;
   }
 
