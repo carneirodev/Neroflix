@@ -27,6 +27,7 @@ color: #fff;
 export const Div = styled.section`
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 10px;
     width:100%;
     display:flex;
     justify-content:space-between;

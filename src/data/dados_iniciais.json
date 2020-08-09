@@ -24,7 +24,7 @@
         },
         {
           "titulo": "Hunter X Hunter",
-          "url": "https://www.youtube.com/watch?v=faqmNf_fZlE"
+          "url": "https://www.youtube.com/watch?v=d6kBeJjTGnY"
         },
         {
           "titulo": "Demon Slayer",
@@ -42,8 +42,6 @@
     },
     {
       "titulo": "Jogos",
-      "cor": "#c28f2c",
-
       "videos": [
         {
           "titulo": "League Legends",
@@ -118,6 +116,10 @@
       "cor": "orange",
       "videos": [
         {
+            "titulo": "Batman",
+            "url": "https://www.youtube.com/watch?v=a-PVBsmiB0Y"
+          },
+        {
           "titulo": "Interestellar",
           "url": "https://www.youtube.com/watch?v=mbbPSq63yuM"
         },
@@ -154,37 +156,69 @@
         {
           "titulo": "MINDSET - Carol Dweck",
           "url": "https://www.youtube.com/watch?v=_5XIH_aldDA"
+        },
+        {
+          "titulo": "Gatilhos Mentais - Gustavo Ferreira",
+          "url": "https://www.youtube.com/watch?v=GPAAELnYGTA"
         }
       ]
     },
     {
-      "titulo": "Aprendendo a aprender tecnologia",
-      "cor": "#6b5be2",
-      "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
-      },
+      "titulo": "Programação",
       "videos": [
         {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+          "titulo": "Filipe Deschamps",
+          "url": "https://www.youtube.com/watch?v=ZtMzB5CoekE"
         },
         {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+          "titulo": "Código Fonte TV",
+          "url": "https://www.youtube.com/watch?v=gHxE22T2gzM"
         },
         {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Rocketseat",
+          "url": "https://www.youtube.com/watch?v=rSaZopACWQM"
         },
         {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+          "titulo": "Fabio Akita",
+          "url": "https://www.youtube.com/watch?v=oUPaJxk6TZ0"
         },
         {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "titulo": "Lucas Montano",
+          "url": "https://www.youtube.com/watch?v=E6DI4kbzKFY"
+        },
+        {
+          "titulo": "Curso em video ",
+          "url": "https://www.youtube.com/watch?v=sTX0UEplF54&list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR"
         }
+      ]
+    },
+    {
+      "titulo": "Empreendedorismo",
+      "videos": [
+          {
+            "titulo": "Shark Tank Brasil",
+            "url": "https://www.youtube.com/watch?v=67O6NvrtqTQ"
+          },
+          {
+            "titulo": "Geraldo Rufino",
+            "url": "https://www.youtube.com/watch?v=V-55IH6CVd4"
+          },
+          {
+            "titulo": "Me poupe",
+            "url": "https://www.youtube.com/watch?v=MziFPb2SbUc"
+          },
+          {
+            "titulo": "Steve Jobs",
+            "url": "https://www.youtube.com/watch?v=UF8uR6Z6KLc"
+          },
+          {
+            "titulo": "Bill Gates",
+            "url": "https://www.youtube.com/watch?v=aCv29JKmHNY"
+          },
+          {
+            "titulo": "Jeff Bezos",
+            "url": "https://www.youtube.com/watch?v=MfrveGfxaX0"
+          }
       ]
     }
   ]

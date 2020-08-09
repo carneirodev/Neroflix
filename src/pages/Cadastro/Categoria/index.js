@@ -72,14 +72,19 @@ function CadastroCategoria() {
           />
           <Div>
             <Button>
-              Cadastrar
+              <Link to="/">
+                Enviar formulário
+              </Link>
             </Button>
           </Div>
         </form>
-
-        <Link to="/">
-          Ir para home
-        </Link>
+        <Div>
+          <Button>
+            <Link to="/">
+              Ir para home
+            </Link>
+          </Button>
+        </Div>
       </ContentAreaContainer>
     </PageDefault>
   );

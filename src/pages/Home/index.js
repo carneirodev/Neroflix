@@ -12,7 +12,7 @@ function Home() {
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription="Olá, eu sou o Carneiro! Aqui você verá meus filmes, séries, livros, musicas, animes e muito mais"
+        videoDescription="Olá, eu sou o Carneiro! Aqui você verá meus filmes, séries, livros, musicas, animes favoritos!"
       />
       <Carrousel
         ignoreFirstVideo
@@ -29,6 +29,12 @@ function Home() {
       />
       <Carrousel
         category={dadosIniciais.categorias[4]}
+      />
+      <Carrousel
+        category={dadosIniciais.categorias[5]}
+      />
+      <Carrousel
+        category={dadosIniciais.categorias[6]}
       />
       <Footer />
     </>

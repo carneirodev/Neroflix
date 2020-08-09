@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ContentAreaContainer = styled.section`
+    margin-bottom:10px;
   @media (max-width: 800px) {
     flex-direction: column;
     padding: 3%;
@@ -27,6 +28,8 @@ font-size: 20px;
 export const Div = styled.section`
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 10px;
+
     width:100%;
     display:flex;
     justify-content:space-between;

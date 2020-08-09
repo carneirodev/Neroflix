@@ -7,7 +7,7 @@ export const FooterBase = styled.footer`
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 40px;
   max-height: 50px;
   color: var(--white);
   display: flex;

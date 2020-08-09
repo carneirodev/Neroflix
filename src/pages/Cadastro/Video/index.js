@@ -1,5 +1,5 @@
 /* eslint-disable import/no-unresolved */
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
@@ -12,7 +12,6 @@ function CadastroVideo() {
     descricao: '',
     cor: '',
   };
-  const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(valoresIniciais);
 
   function setValue(chave, valor) {
@@ -68,7 +67,9 @@ function CadastroVideo() {
           />
           <Div>
             <Button>
-              Enviar Forms
+              <Link to="/">
+                Enviar formulário
+              </Link>
             </Button>
           </Div>
         </form>
