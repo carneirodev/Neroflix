@@ -7,16 +7,16 @@
 Projeto desenvolvido durante a semana imersão React da Alura, reprodução do Front-end da Netflix entretanto com meus videos favoritos
 
 ## Instalando
-Com seu repositório baixado na sua máquina, execute o comando yarn na pasta do projeto clonado para instalar todas as dependências
+Na sua máquina, execute o comando para clonar o repositório:
 ```shell
 git clone https://github.com/carneirodev/neroflix
 ```
 
-Depois de clonado rode o comando:
+Depois de clonado rode o comando yarn na pasta do projeto para instalar todas as dependências:
 ```shell
 yarn
 ```
-Para executar rode o comando:
+Para executar o projeto rode o comando:
 ```shell
 yarn start
 ```
